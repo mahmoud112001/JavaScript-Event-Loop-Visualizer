@@ -13,8 +13,8 @@ console.log("End");`,
   // Example 2: Async / Await under the hood
   2: `async function fetchData() {
   console.log("Fetching...");
-  const result = await Promise.resolve("Data!");
-  console.log(result);
+  await Promise.resolve();
+  console.log("Data!");
 }
 console.log("Before");
 fetchData();
